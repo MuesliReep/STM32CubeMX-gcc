@@ -15,7 +15,7 @@ set SUB_ID=VI
 set STARTUP_NAME=startup_stm32f427xx
 
 :: Include Dirs
-set INCLUDES=-Iinclude/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Include/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/
+set INCLUDES=-IInc/ -Iinclude/ -IDrivers/STM32F4xx_HAL_Driver/Inc/ -IDrivers/CMSIS/Include/ -IDrivers/CMSIS/Device/ST/STM32F4xx/Include/
 
 :: MCFLAGS
 set MCFLAGS=-mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
