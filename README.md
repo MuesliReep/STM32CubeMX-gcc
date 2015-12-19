@@ -32,7 +32,6 @@ make
  - <a href="http://openocd.sourceforge.net/getting-openocd/">OpenOCD</a>
 
 ##Install
-Clone the repo
 
 ####Windows
 add path

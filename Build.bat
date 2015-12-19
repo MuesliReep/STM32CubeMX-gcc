@@ -3,7 +3,6 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 cls
 CD /D %~dp0
 
-set BIN=F4Discovery
 set CUBENAME=F4Discovery
 set EXECUTABLE=%CUBENAME%.elf
 set BIN_IMAGE=%CUBENAME%.bin
@@ -44,6 +43,7 @@ set LIBS=-Llib -lSTM32F4_CUBE -lm -lc -lgcc
 set SRCDIR=Src
 set BLDDIR=bld
 set LIBDIR=lib
+set BINDIR=bin
 set OBJ=
 set SRCFILES=
 
@@ -57,6 +57,7 @@ set SRC_FILES=Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4x
 
 IF NOT EXIST %LIBDIR%/libSTM32F4_CUBE.a echo ERROR:  LIBS MUST BE BUILT BEFORE BUILDING EXECUTABLE & EXIT /B
 IF NOT EXIST %BLDDIR% mkdir %BLDDIR%
+IF NOT EXIST %BINDIR% mkdir %BINDIR%
 
 :: Execute
 
